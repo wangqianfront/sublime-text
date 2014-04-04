@@ -40,6 +40,10 @@ Sublime Text 使用指南
     Clipboard History：剪贴板历史记录。使用 Control + Option ＋ Command + V 来调出。
     WordCount：实时显示字符数。
     ConvertToUTF8：编辑非 UTF-8 编码的文本文件。
+    TrailingSpaces（可以高亮空格并瞬间删除）
+    Pretty JSON
+    itGutter
+    Markdown Preview
 
 #### Snippets：快速输入代码段，这是我最喜欢的功能，不过需要花费时间来设置。
 以 JavaScript为例。选择 Preferences - Browse Packages 菜单，打开 JavaScript 文件夹下的 for-()-{}-(faster).sublime-snippet 这个文件：
