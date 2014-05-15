@@ -5,6 +5,8 @@ http://segmentfault.com/a/1190000000505218
 
 
 #### 快捷键Shortcuts
+
+```
 * Triggered with <strong>*Ctrl+P*</strong>, it is possible to: 
   - <strong>*Command + P*</strong> 或 <strong>*Command + T*</strong>：搜索打开的文件。再输入 <strong>@</strong> 或 <strong>*Command + R*</strong> 可搜索函数和类；输入 <strong>#</strong> 可在当前文件中搜索；输入<strong> :</strong> 或 <strong>*Control + G*</strong> 可跳转到指定行号。可像使用 CSS 选择器一样组合使用这些符号。Type <strong>@</strong> to jump to symbols, <strong>#</strong> to search within the file, and <strong>:</strong> to go to a line number. 
   - <strong>*Control + `*</strong>：调出 Python 控制台
@@ -25,13 +27,16 @@ http://segmentfault.com/a/1190000000505218
   - <strong>*Command + Option + .*</strong>：闭合 HTML/XML 标签
   - 创建符号链接 sudo ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
   - <strong>*Command + Shift + P*</strong>：打开命令面板  Show the Command Palette with <strong>*Command + Shift + P*</strong>
+``` 
   
 #### 推荐插件：
 
     Package Control：方便安装其他插件。
     在控制台中输入如下代码并回车，然后重启 Sublime Text：
-
+    
+```
     import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
+```
 
     SublimeCodeIntel：代码补完提示。输入 . 号即可提示，或者用 Shift + Control + Space 来提示。按住 Option 键再点击变量名，可以跳转到定义变量的地方。
     ZenCoding：使用 Control + Option ＋ Return 来调出。
@@ -67,6 +72,7 @@ description 也是可选的，用于简述其用途，代码补完提示时会�
 自动完成：和 snippets 类似的功能。
 以 HTML 为例。选择 Preferences - Browse Packages 菜单，打开 HTML 文件夹下的 HTML.sublime-completions 这个文件：
 
+```
 {
     "scope": "text.html - source - meta.tag, punctuation.definition.tag.begin",
 
@@ -77,12 +83,16 @@ description 也是可选的，用于简述其用途，代码补完提示时会�
     ]
 }
 
+```
+
 这里的 trigger 表示输入单独的 a 后，按自动完成热键（默认是 Control + Space），就会输出 contents 部分（如果还定义了相同热键的 snippets，则会出现选择菜单），并且光标定位在 $1，编辑完后按 Tab 键，就会跳转到 $2。
 在设置中可以设定 "tab_completion": true，这样使用 Tab 键也可以自动完成。如果想插入 Tab 符号，可以用 Shift + Tab。
 在现有窗口中打开文件：
 按下 Command + , 编辑配置文件，加上这行代码：
 
+```
 "open_files_in_new_window": false
+```
 
 这样双击打开新文件时，就不会另开一个窗口了。
 
