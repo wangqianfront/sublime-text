@@ -1,7 +1,10 @@
 Sublime Text 使用指南
 =================
 
-### 快捷键Shortcuts
+http://segmentfault.com/a/1190000000505218
+
+
+#### 快捷键Shortcuts
 * Triggered with <strong>*Ctrl+P*</strong>, it is possible to: 
   - <strong>*Command + P*</strong> 或 <strong>*Command + T*</strong>：搜索打开的文件。再输入 <strong>@</strong> 或 <strong>*Command + R*</strong> 可搜索函数和类；输入 <strong>#</strong> 可在当前文件中搜索；输入<strong> :</strong> 或 <strong>*Control + G*</strong> 可跳转到指定行号。可像使用 CSS 选择器一样组合使用这些符号。Type <strong>@</strong> to jump to symbols, <strong>#</strong> to search within the file, and <strong>:</strong> to go to a line number. 
   - <strong>*Control + `*</strong>：调出 Python 控制台
