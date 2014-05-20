@@ -1,8 +1,8 @@
 Sublime Text 使用指南
 =================
 
-http://segmentfault.com/a/1190000000505218
 
+![sublime_text](https://cloud.githubusercontent.com/assets/692238/3023854/dd9ec488-dfee-11e3-82c2-5220ee871ded.png)
 
 #### 快捷键Shortcuts
 
