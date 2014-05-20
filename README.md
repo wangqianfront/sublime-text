@@ -6,7 +6,7 @@ Sublime Text 使用指南
 
 #### 快捷键Shortcuts
 
-```
+
 * Triggered with <strong>*Ctrl+P*</strong>, it is possible to: 
   - <strong>*Command + P*</strong> 或 <strong>*Command + T*</strong>：搜索打开的文件。再输入 <strong>@</strong> 或 <strong>*Command + R*</strong> 可搜索函数和类；输入 <strong>#</strong> 可在当前文件中搜索；输入<strong> :</strong> 或 <strong>*Control + G*</strong> 可跳转到指定行号。可像使用 CSS 选择器一样组合使用这些符号。Type <strong>@</strong> to jump to symbols, <strong>#</strong> to search within the file, and <strong>:</strong> to go to a line number. 
   - <strong>*Control + `*</strong>：调出 Python 控制台
@@ -27,31 +27,34 @@ Sublime Text 使用指南
   - <strong>*Command + Option + .*</strong>：闭合 HTML/XML 标签
   - 创建符号链接 sudo ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
   - <strong>*Command + Shift + P*</strong>：打开命令面板  Show the Command Palette with <strong>*Command + Shift + P*</strong>
-``` 
+
   
 #### 推荐插件：
 
-    Package Control：方便安装其他插件。
-    在控制台中输入如下代码并回车，然后重启 Sublime Text：
+1. [emmet](http://docs.emmet.io/)
+
+Package Control：方便安装其他插件。
+在控制台中输入如下代码并回车，然后重启 Sublime Text：
     
 ```
     import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())
 ```
 
-    SublimeCodeIntel：代码补完提示。输入 . 号即可提示，或者用 Shift + Control + Space 来提示。按住 Option 键再点击变量名，可以跳转到定义变量的地方。
-    ZenCoding：使用 Control + Option ＋ Return 来调出。
-    Prefixr：编写 CSS 文件时，可以自动添加 -webkit 等私有词缀。使用 Command + Control + X 来调用。
-    Tag：自动格式化 HTML，还有其他一些关于标签的功能。使用 Option + Control + F 来调用。
-    JsFormat：自动格式化 JavaScript。使用 Option + Control + F 来调用。
-    Case Conversion：切换大小写格式。先按 Option + Control + C，再按 Option + Control + S 切换到下划线分割方式，Option + Control + C 切换到驼峰方式，Option + Control + P 切换到首字母大写方式。
-    Bracket Highlighter：高亮显示匹配的括号。
-    Clipboard History：剪贴板历史记录。使用 Control + Option ＋ Command + V 来调出。
-    WordCount：实时显示字符数。
-    ConvertToUTF8：编辑非 UTF-8 编码的文本文件。
-    TrailingSpaces（可以高亮空格并瞬间删除）
-    Pretty JSON
-    itGutter
-    Markdown Preview
+SublimeCodeIntel：代码补完提示。输入 . 号即可提示，或者用 Shift + Control + Space 来提示。按住 Option 键再点击变量名，可以跳转到定义变量的地方。
+
+ZenCoding：使用 Control + Option ＋ Return 来调出。
+Prefixr：编写 CSS 文件时，可以自动添加 -webkit 等私有词缀。使用 Command + Control + X 来调用。
+Tag：自动格式化 HTML，还有其他一些关于标签的功能。使用 Option + Control + F 来调用。
+JsFormat：自动格式化 JavaScript。使用 Option + Control + F 来调用。
+Case Conversion：切换大小写格式。先按 Option + Control + C，再按 Option + Control + S 切换到下划线分割方式，Option + Control + C 切换到驼峰方式，Option + Control + P 切换到首字母大写方式。
+Bracket Highlighter：高亮显示匹配的括号。
+Clipboard History：剪贴板历史记录。使用 Control + Option ＋ Command + V 来调出。
+WordCount：实时显示字符数。
+ConvertToUTF8：编辑非 UTF-8 编码的文本文件。
+TrailingSpaces（可以高亮空格并瞬间删除）
+Pretty JSON
+itGutter
+Markdown Preview
 
 #### Snippets：快速输入代码段，这是我最喜欢的功能，不过需要花费时间来设置。
 以 JavaScript为例。选择 Preferences - Browse Packages 菜单，打开 JavaScript 文件夹下的 for-()-{}-(faster).sublime-snippet 这个文件：
